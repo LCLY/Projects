@@ -1,1 +1,356 @@
 
+<html>
+<head>
+
+    <title>Assignment 2</title> 
+    <!-- Script tag for linking the HTML and javascript files -->
+    <script language ="javascript" type="text/javascript" src="hw2.js"></script>
+    <!-- CSS styling -->
+    <style type="text/css">
+  
+        #topDiv { 
+            position: absolute;
+            top: 110px;
+            left: 70px;
+            width: 850px;
+            height: 280px;
+            border: 2.5px solid;
+        }
+
+        h1{
+            position: absolute;
+            left: 415px;
+        }
+
+        p1 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-family: Verdana;
+        }
+
+        #employeeID {
+            position: absolute;
+            top: 55px;
+            left: 30px;
+        }
+
+        #txtEmployeeID {
+            position: absolute;
+            top: 55px;
+            left: 165px;
+            width: 150px;
+            border: 2px solid;
+            text-indent: 5px;
+        }
+
+        #dateWorked {
+            position: absolute;
+            top: 90px;
+            left: 30px;
+        }
+
+        #txtDateWorked {
+            position: absolute;
+            top: 90px;
+            left: 165px;
+            width: 150px;
+            border: 2px solid;
+            text-indent: 5px;
+        }
+
+        #hoursWorked {
+            position: absolute;
+            top: 55px;
+            left: 410px;
+        }
+
+        #txtHoursWorked {
+            position: absolute;
+            top: 55px;
+            left: 530px;
+            width:120px;          
+            border: 2px solid;
+            text-align: right;            
+        }
+
+
+        #billable {
+            position: absolute;
+            top: 93px;
+            left: 440px;
+        }
+       
+        #txtBillable {
+            position: absolute;
+            top: 92px;
+            left: 410px;
+            transform: scale(1.5);
+        }
+
+        #description{
+            position: absolute;
+            top: 125px;
+            left: 30px;
+        }
+
+        #txtDescription{
+            position: absolute;
+            top: 145px;
+            left: 30px;   
+            width: 650px;
+            height: 120px;
+            border: 2px solid;
+            resize: none;
+        }
+
+        #btnSave{
+            position: absolute;
+            top: 230px;
+            left: 700px;
+            box-shadow: 5px 5px 3px #3A3A3A;        
+            width: 120px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        #logEntries {
+            position: absolute;           
+            font-family: Verdana;
+            font-size: 18px;
+            font-weight: 600;
+            top: 420px;
+            left: 70px;
+        }
+
+        #totalHoursWorked{
+            position: absolute;
+            top: 423px;
+            left: 750px;
+        }
+
+        #txtTotalHoursWorked {
+            position: absolute;
+            border: none;
+            left: 890px;
+            top: 423px;
+            width: 45px;
+            background: #FFDAB9;
+        }
+
+        #tableLogEntries{
+            position: absolute;
+            top: 465px;
+            left: 70px;
+            width: 850px;
+            height: 300px;
+            border: 2.5px solid;
+            margin: auto;            
+        }
+
+        #tableLogEntriesData{
+            position: absolute;
+            width: 850px;
+            height: 279px;
+            top: 488px;
+            left: 72px;       
+            margin: auto;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        
+        #columnHeadings{
+            position:absolute;
+            height: 20px;
+            width: 850px;            
+            background-color:#f9b042;
+        }
+
+        #employeeIDHeading{
+            position: absolute;
+            left: 5px;
+        }
+
+        #dateWorkedHeading{
+            position: absolute;
+            left: 102px;
+        }
+
+        #hoursWorkedHeading{
+            position: absolute;
+            left: 187px;
+        }
+
+        #descriptionHeading{
+            position: absolute;
+            left: 245px;
+        }
+
+        #col1{
+            position:absolute;
+            border-right: 1.5px solid;
+            width: 95px;
+            height: 300px;
+        }
+
+        #col2{
+            position:absolute;
+            border-right: 1.5px solid;
+            left:30px;
+            width: 150px;
+            height: 300px;
+        }
+
+        #col3{
+            position:absolute;
+            border-right: 1.5px solid;
+            left: 35px;
+            width: 200px;
+            height:300px;
+        }
+
+        #col4{
+            position:absolute;
+            border-right: 1.5px solid;            
+            left: 140px;
+            width: 600px;
+            height:300px;
+        }
+
+        #col5{
+            position:absolute;
+            border-right: 1.5px solid;
+            left: 330px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .divEmployeeRow{
+            display: flex;            
+            width: 830px;
+            height: 20px;
+        }
+
+        .divEmployeeID{
+            display: flex;
+            position: absolute;
+            width: 85px;
+            left: 6px;
+            height: 20px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .divDateWorked{
+            display: flex;
+            position: absolute;
+            width: 75px;
+            left: 103px;
+            height: 20px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .divHoursWorked{
+            display: flex;
+            position: absolute;
+            width: 45px;
+            left: 190px;
+            height: 20px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .divDescription{
+            display: flex;
+            position: absolute;
+            left:245px;
+            width:490px;
+            height:20px;
+            overflow-y:hidden;
+            overflow-x:hidden;
+
+        }
+
+        .divDelete{
+            display: flex;
+            position: absolute;
+            left:765px;
+            width:45px;
+            height:20px;            
+            overflow-y:hidden;
+            overflow-x:hidden;
+        }
+
+        .divDelete:hover{          
+            background-color:aquamarine;
+        }
+
+
+    body {
+        background: #FFDAB9;
+    }
+    </style>
+</head>
+
+<body onload="body_onload()">
+    <!-- Header: TIME LOG -->
+    <b><h1> TIME LOG </h1></b>
+
+    <!-- Big Div that includes all the text boxes -->
+    <div id="topDiv">
+        
+        <p1><b>Add New Entry</b></p1>
+
+        <!-- Text label and text box for Employee ID -->
+        <label id="employeeID"> Employee ID: </label>
+        <input type="text" id="txtEmployeeID">
+
+        <!-- Text label and text box for Date Worked -->
+        <label id="dateWorked"> Date Worked: </label>
+        <input type="date" id="txtDateWorked" >
+
+        <!-- Text label and text box for Hours Worked -->
+        <label id="hoursWorked"> Hours Worked: </label>
+        <input type="text" id="txtHoursWorked">
+
+        <!-- Text label and check box for Billable -->
+        <label id="billable"> Billable? </label>
+        <input type="checkbox" id="txtBillable">
+
+        <!-- Text area and text box for Description -->
+        <label id="description"> Description: </label>
+        <textarea id="txtDescription"></textarea>
+
+        <!-- Save button -->
+        <input type="button" id="btnSave" value="Save">       
+    </div>
+
+    <label id="logEntries"> Time Log Entries </label>
+
+    <label id="totalHoursWorked">Total hours worked: </label>
+
+    <!-- Display total hours worked -->    
+    <input type="text" id="txtTotalHoursWorked" disabled>
+
+    <!-- The table of the employees -->
+    <div id="tableLogEntries">
+        <!-- The headings -->
+        <div id="columnHeadings">            
+            <label id="employeeIDHeading"> Employee ID </label>
+            <label id="dateWorkedHeading"> Date </label>
+            <label id="hoursWorkedHeading"> Hours </label>
+            <label id="descriptionHeading"> Description </label>
+        </div>
+        <div id="col1"></div>
+        <div id="col2"></div>
+        <div id="col3"></div>
+        <div id="col4"></div>
+        <div id="col5"></div>
+    </div>
+    <!-- The data of the employees -->
+    <div id="tableLogEntriesData"></div>
+    
+</body>
+
+</html>
