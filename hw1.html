@@ -1,0 +1,129 @@
+<html>
+<head>
+<title> Assignment 1 </title>
+<script language="javascript" type=" text/javascript" src="hw1.js"></script>
+<style type = "text/css">
+
+
+	#txtCheckAmount {
+        position: absolute;
+        left: 130px;       
+        text-align: right;        
+        border: 2px solid black; 
+        background-color: #EAE3E1;     
+    }
+
+    #checkAmount {
+        position: absolute;
+        left: 20px;
+    }
+
+    #txtSalesTaxPercentage {
+        position: absolute;
+        left: 130px;
+        top:60px;
+        text-align: right;
+        border: 2px solid black;
+        background-color: #EAE3E1;
+    }
+
+     #salesTaxPercentage {
+        position: absolute;
+        top:60px;
+        left: 20px;
+    }
+
+    #txtTipPercentage {
+        position: absolute;
+        left: 130px;
+        top:110px;
+        text-align: right;
+        border: 2px solid black;
+        background-color: #EAE3E1;
+    }
+
+     #tipPercentage {
+        position: absolute;
+        top:110px;
+        left: 20px;
+    }
+
+    #txtSalesTax {
+        position: absolute;
+        left: 130px;
+        top:160px;
+        text-align: right;
+        border: 2px solid black;
+        background-color: #F6DDCC;
+    }
+
+     #salesTax {
+        position: absolute;
+        top:160px;
+        left: 20px;
+    }
+
+    #txtTipAmount {
+        position: absolute;
+        left: 130px;
+        top:210px;
+        text-align: right;
+        border: 2px solid black;
+        background-color: #F6DDCC;
+    }
+
+     #tipAmount {
+        position: absolute;
+        top:210px;
+        left: 20px;
+    }
+
+    #btnTipPreTax{
+    	position: absolute;    	
+    	width: 280px;
+    	text-align: center;
+    	top: 260px;
+        left: 20px;
+    }
+
+    #btnTotalTip{
+    	position: absolute;    	
+    	width: 280px;
+    	text-align: center;
+    	top: 310px;
+        left: 20px;
+    }
+
+    body{
+    	background: #EAE3E1;
+    }
+
+
+</style>
+</head>
+
+
+<body>
+  
+	<label id="checkAmount"> Check Amount </label>
+    <input type="text" id="txtCheckAmount" >
+   
+    <label id="salesTaxPercentage"> Sales Tax % </label>
+    <input type="text" id="txtSalesTaxPercentage" value="7.0">
+    
+    <label id="tipPercentage"> Tip % </label>
+    <input type="text" id="txtTipPercentage">
+  
+    <label id="salesTax"> Sales Tax </label>
+    <input type="text" id="txtSalesTax" disabled>
+
+    <label id="tipAmount"> Tip Amount </label>
+    <input type="text" id="txtTipAmount" disabled>
+
+      
+    <button id= "btnTipPreTax" onload ="displayTipPreTax()"> Tip Pre Tax </button>
+    <button id= "btnTotalTip" onload ="displayTotalTip()"> Tip On Total</button>
+  
+
+</body>
+</html>
