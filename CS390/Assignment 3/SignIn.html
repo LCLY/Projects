@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title> Assignment 3 - Time Log v2 </title>
+    <!--Script tag to link HTML and Javascript file-->
+    <script language="javascript" type="text/javascript" src="SignIn.js"></script>
+    <script language="javascript" type="text/javascript" src="Shared.js"></script>
+    <!--CSS styling-->
+    <style type="text/css">
+
+        #DivTimeLog {
+            position: absolute;
+            top: 150px;
+            left: 300px;
+            border: 2px solid;
+            width: 400px;
+            height: 250px;
+            background-color: mistyrose;
+        }
+
+        p {
+            position:absolute;
+            top: -10px;
+            left: 15px;
+            font-size: 20px;
+            font-family: Arial;
+
+        }
+
+        #employeeID {
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        #txtEmployeeID {
+            position: absolute;
+            top: 70px;
+            left: 170px;
+            border: 2px solid;
+            text-indent: 5px;
+            width: 150px;           
+        }
+
+        #password {
+            position: absolute;
+            top: 105px;
+            left: 50px;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        #txtPassword {
+            position: absolute;
+            top: 105px;
+            left: 170px;
+            border: 2px solid;
+            text-indent: 5px;
+            width: 150px;
+        }
+
+        #btnSignIn {
+            position: absolute;
+            top: 145px;
+            left: 170px;
+            width: 150px;
+            box-shadow: 5px 5px 3px #3A3A3A;          
+        }
+
+        #txtCheckBox {
+            position: absolute;
+            top: 195px;
+            left: 50px;
+            transform: scale(1.5);
+        }
+
+        #remember {
+            position: absolute;
+            top: 195px;
+            left: 80px;
+            font-family: sans-serif;
+        }
+
+     
+
+
+    </style>
+</head>
+<body onload = "body_onload()">
+    <!--Big Div for time log sign in-->
+    <div id="DivTimeLog">
+
+        <!--paragraph showing time log sign in-->
+        <p><b>Time Log Sign In</b></p>
+
+        <!--Text label and text box for Employee ID-->
+        <label id="employeeID"> Employee ID: </label>
+        <input type="text" id="txtEmployeeID"/>
+
+        <!--Text label and text box for password-->
+        <label id="password"> Password: </label>
+        <input type="password" id="txtPassword" />
+
+        <!--Button for sign in-->
+        <input type="button" id="btnSignIn" value="Sign In"/>
+
+        <!--Text label and check box for remembering employee ID-->
+        <label id="remember"> Remember Employee ID </label>
+        <input type="checkbox" id="txtCheckBox" />
+            
+    </div>     
+   
+</body>
+</html>
