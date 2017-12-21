@@ -7,4 +7,4 @@ If the token is present, query the table to see if any user records have this to
 New endpoint is implemented that allows new data to be added to the database.
 Transaction processing is used when inserting records into the Questions and Categories table to ensure that either both insert works or neither of them works.
 Technology Used:
-HTML, CSS, JS, Node.js, SQLite (Express, body-parser, sqlite3, sqlite3-transaction)
+HTML, CSS, JS, Node.js, SQLite (npm packages: Express, body-parser, sqlite3, sqlite3-transaction)
