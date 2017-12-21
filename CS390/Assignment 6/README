@@ -1,0 +1,4 @@
+Implementation of the similar Web API from previous assignment but with an addition a new feature that uses GET request to query the table from the database given and return a list of data that matches the search criteria.
+Node.js is used to run the server.
+Technology used:
+HTML, CSS, JS, Node.js, SQLite
