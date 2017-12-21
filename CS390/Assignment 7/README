@@ -1,0 +1,10 @@
+Containing most of the features from assignment 6 with the addition of authentication feature that uses Token Based Authentication.
+New columns for authentication tokens in the database table, recording the time stamp and the token issued to user.
+GUID will be generated everytime when a user signed in.
+The token is passed in query string as "auth=xxxxxxxx" where xxxxxxxx is the authorization token returned from the signin endpoint.
+If token is not present in the query string, error will be returned.
+If the token is present, query the table to see if any user records have this token's value, and also to compare the value with the current time if its already > one hour, return error.
+New endpoint is implemented that allows new data to be added to the database.
+Transaction processing is used when inserting records into the Questions and Categories table to ensure that either both insert works or neither of them works.
+Technology Used:
+HTML, CSS, JS, Node.js, SQLite (Express, body-parser, sqlite3, sqlite3-transaction)
