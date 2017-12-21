@@ -1,0 +1,21 @@
+{
+  "name": "assignment7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "guid": "^0.0.12",
+    "moment": "^2.19.1",
+    "sqlite3": "^3.1.13",
+    "sqlite3-transactions": "0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ley Yen Choo",
+  "license": "ISC"
+}
