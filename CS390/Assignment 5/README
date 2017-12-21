@@ -1,8 +1,6 @@
 Same features as assignment 4 but with further implemention of a Web API for signing in and storing the data entries.
 XMLHTTLRequest is implemented for GET and POST requests.
-The web API will return errors for invalid parameters, incorrect sign in credentials, and when too many entries
-will be retrieved with the supplied parameters. When any error occurs connecting with the server or from the
-Web APIs, show the error message in the SPA alert modal
+The web API will return errors for invalid parameters, incorrect sign in credentials, and when too many entries will be retrieved with the supplied parameters. When any error occurs connecting with the server or from the Web APIs, show the error message in the SPA alert modal
 All other application state information are stored in local storage using JSON.
 Technology Used: 
 HTML, CSS and JS
