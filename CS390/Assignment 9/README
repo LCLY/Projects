@@ -1,0 +1,4 @@
+Single Page App for a scrollable list of automatically generated component using Vue.js.
+Implemented transitions on different events such as sign in, adding functions and delete functions.
+Technology used:
+HTML, CSS, JS, Vue.js, Node.js
