@@ -1,0 +1,5 @@
+memcmp test1                        : 3   of 3  
+memcmp test2                        : 3   of 3  
+memcmp test3                        : 3   of 3  
+memcmp test4                        : 3   of 3  
+memcmp test5                        : 3   of 3  

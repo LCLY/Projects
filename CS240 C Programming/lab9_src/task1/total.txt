@@ -1,0 +1,5 @@
+merging test1                       : 3   of 3  
+merging test2                       : 3   of 3  
+merging test3                       : 3   of 3  
+merging test4                       : 3   of 3  
+merging test5                       : 3   of 3  

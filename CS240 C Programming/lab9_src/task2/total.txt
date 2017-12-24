@@ -1,0 +1,5 @@
+stack test1                         : 4   of 4  
+stack test2                         : 4   of 4  
+stack test4                         : 4   of 4  
+stack test5                         : 4   of 4  
+stack test6                         : 4   of 4  

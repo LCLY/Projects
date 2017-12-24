@@ -1,0 +1,3 @@
+lngchr test1                        : 3   of 3  
+lngchr test2                        : 3   of 3  
+lngchr test3                        : 3   of 3  
