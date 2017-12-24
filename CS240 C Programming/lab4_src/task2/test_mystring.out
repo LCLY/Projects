@@ -1,0 +1,9 @@
+Running test1
+mystrcmp("banana", "apple")=1
+mystrcmp("apple", "banana")=-1
+mystrcmp("appleapple", "applebanana")=-1
+mystrcmp("applebanana", "appleapple")=1
+mystrcmp("apple", "apple")=0
+mystrcmp("appleapple", "apple")=1
+mystrcmp("apple", "applebanana")=-1
+mystrcmp("applebanana", "apple")=1

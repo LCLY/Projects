@@ -1,0 +1,19 @@
+Be sure to include stdio.h at the top of your file.
+
+When printing out the swapped strings, be sure to put a newline after each string.
+
+When you make a character array, be sure to make an extra space for the null-character.
+This will tell printf where the end of the string is.
+For example if you have a 5-character string, make the char array of size 6: 5 characters plus
+1 null-character at the end.  If you fail to do so, you may get odd outputs like this:
+
+data 74 $ ./swap 125 945
+145
+925P
+
+In the main() function, the arguments are (int argc, char const *argv[]).
+You use these to interact with the arguments that are passed to a program.
+
+char * argv[]  is just another way to write  char argv[][].
+
+The null character is written like this:  char nullChar = '\0';
