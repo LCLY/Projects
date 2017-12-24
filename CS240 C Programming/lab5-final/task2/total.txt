@@ -1,0 +1,8 @@
+sorts test1                         : 10  of 10 
+sorts test2                         : 10  of 10 
+sorts test3                         : 10  of 10 
+sorts test4                         : 10  of 10 
+sorts test5                         : 10  of 10 
+sorts test6                         : 10  of 10 
+sorts test7                         : 10  of 10 
+sorts test8                         : 10  of 10 

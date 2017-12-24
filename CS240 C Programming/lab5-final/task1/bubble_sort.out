@@ -1,0 +1,8 @@
+Please enter number of elements
+Please enter 10 integers
+Array Before sorted is: 
+[ 99, 88, 77, 66, 55, 44, 33, 22, 11, 101 ]
+
+Array After sorted is: 
+[ 11, 22, 33, 44, 55, 66, 77, 88, 99, 101 ]
+

@@ -1,0 +1,12 @@
+Please enter number of elements
+Please enter 4 integers
+How do you want to sort the array?
+1.Insert Sort
+2.Select Sort
+You chose select sort
+Array Before sorted is: 
+[ 10, 110, 112, 1110 ]
+
+Array After sorted is: 
+[ 1110, 112, 110, 10 ]
+
