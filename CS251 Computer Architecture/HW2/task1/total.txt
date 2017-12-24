@@ -1,0 +1,2 @@
+intensity ../images/Lenna.png 2     : 5   of 5  
+intensity ../images/LWSN.jpg .5     : 5   of 5  
