@@ -1,0 +1,1 @@
+SYNTAX: ./WordCount <filename> [ --sort-lex | --sort-num ] --histogram?
