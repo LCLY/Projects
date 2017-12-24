@@ -1,0 +1,162 @@
+
+<html>
+<head>
+
+    <title>Assignment 3 - Time Log v2</title>
+    <!-- Script tag for linking the HTML and javascript files -->
+    <script language="javascript" type="text/javascript" src="Edit.js"></script>
+    <script language="javascript" type="text/javascript" src="Shared.js"></script>
+    <!-- CSS styling -->
+    <style type="text/css">
+        #topDiv {
+            position: absolute;
+            top: 110px;
+            left: 70px;
+            width: 850px;
+            height: 280px;
+            border: 2.5px solid;
+            background-color:mistyrose;    
+        }
+          
+        p1 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-family: Verdana;
+        }
+
+        #employeeID {
+            position: absolute;
+            top: 55px;
+            left: 30px;
+        }
+
+        #txtEmployeeID {
+            position: absolute;
+            top: 55px;
+            left: 165px;
+            width: 150px;
+            border: 2px solid;
+            text-indent: 5px;
+        }
+
+        #dateWorked {
+            position: absolute;
+            top: 90px;
+            left: 30px;
+        }
+
+        #txtDateWorked {
+            position: absolute;
+            top: 90px;
+            left: 165px;
+            width: 150px;
+            border: 2px solid;
+            text-indent: 5px;
+        }
+
+        #hoursWorked {
+            position: absolute;
+            top: 55px;
+            left: 410px;
+        }
+
+        #txtHoursWorked {
+            position: absolute;
+            top: 55px;
+            left: 530px;
+            width: 120px;
+            border: 2px solid;
+            text-align: right;
+        }
+
+
+        #billable {
+            position: absolute;
+            top: 93px;
+            left: 440px;
+        }
+
+        #txtBillable {
+            position: absolute;
+            top: 92px;
+            left: 410px;
+            transform: scale(1.5);
+        }
+
+        #description {
+            position: absolute;
+            top: 125px;
+            left: 30px;
+        }
+
+        #txtDescription {
+            position: absolute;
+            top: 145px;
+            left: 30px;
+            width: 650px;
+            height: 120px;
+            border: 2px solid;
+            resize: none;
+        }
+
+        #btnSave {
+            position: absolute;
+            top: 160px;
+            left: 700px;
+            box-shadow: 5px 5px 3px #3A3A3A;
+            width: 120px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        #btnDelete {
+            position: absolute;
+            top: 220px;
+            left: 700px;
+            box-shadow: 5px 5px 3px #3A3A3A;
+            width: 120px;
+            height: 30px;
+            cursor: pointer;
+        }
+              
+    </style>
+</head>
+
+<body onload="body_onload()">
+    
+    <!-- Big Div that includes all the text boxes -->
+    <div id="topDiv">
+
+        <p1><b>Edit Entry</b></p1>
+
+        <!-- Text label and text box for Employee ID -->
+        <label id="employeeID"> Employee ID: </label>
+        <input type="text" id="txtEmployeeID">
+
+        <!-- Text label and text box for Date Worked -->
+        <label id="dateWorked"> Date Worked: </label>
+        <input type="date" id="txtDateWorked">
+
+        <!-- Text label and text box for Hours Worked -->
+        <label id="hoursWorked"> Hours Worked: </label>
+        <input type="text" id="txtHoursWorked">
+
+        <!-- Text label and check box for Billable -->
+        <label id="billable"> Billable? </label>
+        <input type="checkbox" id="txtBillable">
+
+        <!-- Text area and text box for Description -->
+        <label id="description"> Description: </label>
+        <textarea id="txtDescription"></textarea>
+
+        <!-- Save button -->
+        <input type="button" id="btnSave" value="Save">
+
+        <!-- Delete button -->
+        <input type="button" id="btnDelete" value="Delete">
+    </div>
+    
+</body>
+
+</html>

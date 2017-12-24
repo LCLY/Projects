@@ -1,0 +1,440 @@
+body{
+    background-color: skyblue;
+}
+
+#signInDiv{
+    position: absolute;
+    border: solid 1px black;
+    background-color:rgb(255, 239, 122);
+    width:800px;
+    height:200px;
+    left: 400px;
+    top:50px;
+}
+
+#lblSignIn{
+    position: absolute;
+    font-size:30px;
+    top:10px;
+    left:15px;
+}
+
+#lblUserID{
+    position: absolute;
+    font-size: 22px;
+    top:83px;
+    left:55px;
+}
+
+#lblPassword{
+    position: absolute;
+    font-size: 22px;
+    top:133px;
+    left:55px;
+}
+
+#txtUserID{
+    position: absolute;
+    top:80px;
+    left:160px;
+    width:180px;
+    height:30px;
+    border:solid black 1px;
+    font-size:22px;
+}
+
+#txtPassword{
+    position: absolute;
+    top:130px;
+    left:160px;
+    width:180px;
+    height:30px;
+    border:solid black 1px;
+    font-size:22px;
+}
+
+#btnSignIn{
+    position:absolute;
+    top:80px;
+    width:170px;
+    height:30px;
+    left:370px;
+    font-size:22px;
+    box-shadow: 4px 4px #888888;
+}
+
+#signInMessage {
+    position:absolute;
+    font-size:22px;
+    top:130px;
+    left:370px;
+    color:red;
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+#questionSearch{
+    position: relative;
+    height:100px;
+    left:350px;
+    top:55px;
+}
+
+#lblQuestion{
+    position: absolute;
+    top:20px;
+    left:15px;
+    width:250px;
+    font-size:30px;
+}
+
+#lblContain{
+    position: absolute;
+    top:70px;
+    left:15px;
+    width:290px;
+    font-size: 25px;
+}
+
+#txtSearchBar{
+    position: absolute;
+    top:72px;
+    left:300px;
+    height:30px;
+    width:350px;
+    border:solid 1px black;
+    font-size:22px;
+}
+
+#btnSearch{
+    position: absolute;
+    top:72px;
+    left:660px;
+    height:30px;
+    width:130px;
+    font-size:22px;
+    box-shadow: 4px 4px #888888;
+}
+
+#btnAddNew{
+    position: absolute;
+    top:72px;
+    left:800px;
+    height:30px;
+    width:130px;
+    font-size:22px;
+    box-shadow: 4px 4px #888888;
+}
+
+#searchMessage{
+    position:absolute;
+    top:105px;
+    left:280px;
+    width:270px;
+    font-size: 22px;
+    margin:auto;
+    color:red;
+}
+
+
+.resultDiv {
+    position:relative;
+    background-color:rgb(198, 218, 70);
+    width:650px;
+    height:150px;
+    left:450px;
+    right:0px;
+    top:80px;
+    padding:10px;
+    border:solid;
+    border-width:1px;
+    margin: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.lblResultCategoryTitle {
+    position:absolute;
+    width:200px;
+    top:30px;
+    left:30px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.lblResultDollarValue {
+    position:absolute;
+    width:200px;
+    top:80px;
+    left:30px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.lblResultAirDate {
+    position:absolute;
+    width:200px;
+    top:110px;
+    left:30px;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.lblResultQuestionText {
+    position:absolute;
+    width:400px;
+    top:30px;
+    left:250px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.lblResultAnswerText {
+    position:absolute;
+    width:400px;
+    top:120px;
+    left:250px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.fade-enter-active {
+    transition: opacity 1s
+} 
+   
+.fade-leave-active {
+    transition: opacity 0s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0
+}
+
+
+.btnDelete {
+    position:absolute;
+    top:10px;
+    left:640px;
+    width:20px;
+    height:20px;
+    border:none;
+    background-size:cover;
+    background-image:url("https://d30y9cdsu7xlg0.cloudfront.net/png/3823-200.png");
+    cursor:pointer;
+}
+
+.btnDelete:hover {
+    background-image:url("http://downloadicons.net/sites/default/files/recycle-bin-logo-icon-66421.png");
+}
+
+.btnDelete:focus {
+    outline:none;
+}
+
+#deleteConfirm {
+    position:absolute;
+    z-index:10;
+    width:450px;
+    height:30px;
+    top:500px;
+    bottom:0px;
+    left:550px;
+    right:0px;
+    padding:15px;
+    background:rgb(231, 178, 178);
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#deleteConfirmMessage {
+    position:relative;
+    left:0px;
+}
+
+#btnYesConfirmDelete {
+    position:relative;
+    left:10px;
+    width:50px;
+    cursor:pointer;
+}
+
+#btnYesConfirmDelete:hover {
+    background-color:green;
+}
+
+#btnNoConfirmDelete {
+    position:relative;
+    left:20px;
+    width:50px;
+    cursor:pointer;
+}
+
+#btnNoConfirmDelete:hover {
+    background-color:red;
+}
+
+
+#addNewDiv {
+    position:relative;
+    background-color:rgb(243, 149, 72);
+    top:50px;
+    left:370px;
+    right:0px;
+    bottom:10px;
+    width: 800px;
+    height:380px;
+    padding:10px;
+    margin:10px;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#lblAddNewQuestionHeader {
+    position:absolute;
+    top:25px;
+    left:30px;
+    width:700px;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#lblAddNewCategory {
+    position:absolute;
+    top:80px;
+    left:40px;
+    font-size:22px;
+}
+
+#txtAddNewCategory {
+    position:absolute;
+    top:80px;
+    left:140px;
+    width:190px;
+    height:30px;
+    font-size:22px;
+}
+
+#lblAddNewAirDate {
+    position:absolute;
+    top:120px;
+    left:40px;
+    font-size:22px;
+}
+
+#txtAddNewAirDate {
+    position:absolute;
+    top:120px;
+    left:140px;
+    width:190px;
+    height:30px;
+    font-size:20px;
+}
+
+#lblAddNewShowNumber {
+    position:absolute;
+    top:80px;
+    left:340px;
+    font-size:22px;
+}
+
+#txtAddNewShowNumber {
+    position:absolute;
+    top:80px;
+    left:490px;
+    width:180px;
+    height:30px;
+    font-size:22px;
+}
+
+#lblAddNewDollarValue {
+    position:absolute;
+    top:120px;
+    left:340px;
+    font-size:22px;
+}
+
+#txtAddNewDollarValue {
+    position:absolute;
+    top:120px;
+    left:490px;
+    width:180px;
+    height:30px;
+    font-size:22px;
+}
+
+#lblAddNewQuestion {
+    position:absolute;
+    top:160px;
+    left:40px;
+    font-size:22px;
+}
+
+#txtAddNewQuestion {
+    position:absolute;
+    top:160px;
+    left:140px;
+    resize:none;
+    width:530px;
+    height:180px;
+    font-size:22px;
+}
+
+#lblAddNewAnswer {
+    position:absolute;
+    top:350px;
+    left:40px;
+    font-size:22px;
+}
+
+#txtAddNewAnswer {
+    position:absolute;
+    top:350px;
+    left:140px;
+    width:530px;
+    height:30px;
+    font-size:22px;
+}
+
+#btnSave {
+    position:absolute;
+    top:80px;
+    left:680px;
+    width:130px;
+    cursor:pointer;
+     font-size:22px;
+}
+
+#btnSave:hover{
+    background-color:green;
+}
+
+#btnCancel {
+    position:absolute;
+    top:120px;
+    left:680px;
+    width:130px;
+    cursor:pointer;
+     font-size:22px;
+}
+
+#btnCancel:hover {
+    background-color:red;
+}
+
+#lblAddNewQuestionMessage {
+    position:absolute;
+    width:400px;
+    top:410px;
+    left:20px;
+    color:red;
+    font-size:20px;
+}

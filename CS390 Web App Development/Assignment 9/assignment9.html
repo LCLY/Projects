@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Jeorpardy Questions</title>
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <script language="javascript" type"text/javascript" src="assignment9.js"></script>
+    <link rel="stylesheet" type="text/css" href="assignment9.css">
+    <script type="text/x-template" id="result-box-template">
+        <div class="resultDiv">
+            <label class="lblResultCategoryTitle"> {{ categorytitle }}</label>
+            <label class="lblResultDollarValue"> ${{ dollarvalue }}</label>
+            <label class="lblResultAirDate"> Aired {{ airdate }}</label>
+            <label class="lblResultQuestionText" v-on:mouseover="showAnswer = true" v-on:mouseleave="showAnswer = false"> 
+                {{ questiontext }}</label>
+            <transition name="fade">
+                <label class="lblResultAnswerText" v-show="showAnswer"> {{ answertext }}</label>
+            </transition>
+            <button class="btnDelete" v-on:click="deleteConfirm"></button>
+        </div>
+    </script>
+</head>
+
+<body onload ="body_onload()">
+    <div id="hw9App">
+        <transition name="slide-fade">
+            <div id="signInDiv" v-if="!signInStatus">
+                <label id="lblSignIn">Jeorpardy Question Sign In</label>
+                <label id="lblUserID">User ID:</label>
+                <label id="lblPassword">Password:</label>
+                <input type="text" id="txtUserID"/>
+                <input type="password" id="txtPassword"/>
+                <button type="button" id="btnSignIn" v-on:click="checkSignIn">Sign In</button>
+                <label id="signInMessage">{{ signInMessage }}</label>
+            </div>
+        </transition>
+
+        <transition name="slide-fade">
+            <div id="questionSearch" v-if="signInStatus && !addNewStatus">
+                <label id="lblQuestion">Jeopardy Questions</label>
+                <label id="lblContain">Show questions containing:</label>
+                <input id="txtSearchBar" type="text" />
+                <button id="btnSearch" v-on:click="getQuestions">Search</button>
+                <button id="btnAddNew" v-on:click="openAddNew">Add New</button>
+                <label id="searchMessage" v-show="error">{{ searchMessage }}</label>
+            </div>
+        </transition>
+
+            <transition name="slide-fade">
+                <div id="addNewDiv" v-if="addNewStatus">
+                    <label id="lblAddNewQuestionHeader">Add a New Question</label>
+            
+                    <label id="lblAddNewCategory">Category:</label>
+                    <select id="txtAddNewCategory"></select>
+            
+                    <label id="lblAddNewAirDate">Air Date:</label>
+                    <input id="txtAddNewAirDate" type="date" />
+            
+                    <label id="lblAddNewShowNumber">Show Number:</label>
+                    <input id="txtAddNewShowNumber" type="text" />
+            
+                    <label id="lblAddNewDollarValue">Dollar Value:</label>
+                    <input id="txtAddNewDollarValue" type="text" />
+            
+                    <label id="lblAddNewQuestion">Question:</label>
+                    <textarea id="txtAddNewQuestion"></textarea>
+            
+                    <label id="lblAddNewAnswer">Answer:</label>
+                    <input id="txtAddNewAnswer" type="text" />
+            
+                    <button id="btnSave" v-on:click="addQuestion">Save</button>
+                    <button id="btnCancel" v-on:click="addNewStatus = false">Cancel</button>
+            
+                    <label id="lblAddNewQuestionMessage"  v-show="error"> {{ addNewQuestionMessage }}</label>
+                </div>
+            </transition>
+
+
+        <transition name="fade">
+            <div id="deleteConfirm" v-if="deleteConfirmStatus">
+                <label id="deleteConfirmMessage">Are you sure you want to delete this question?</label>
+                <button id="btnYesConfirmDelete" v-on:click="questionDelete">Yes</button>
+                <button id="btnNoConfirmDelete" v-on:click="deleteConfirmStatus = false">No</button>
+            </div>
+        </transition>
+
+        <transition-group name="slide-fade">
+            <result-box v-for="question in questions" 
+                v-bind:key="question" 
+                v-bind:categorytitle="question.CategoryTitle" 
+                v-bind:dollarvalue="question.DollarValue"
+                v-bind:airdate="question.AirDate" 
+                v-bind:questiontext="question.QuestionText" 
+                v-bind:answertext="question.AnswerText"
+                v-bind:questionid="question.QuestionID">
+            </result-box>
+        </transition-group>
+
+    </div>
+
+  </body>
+
+</html>
