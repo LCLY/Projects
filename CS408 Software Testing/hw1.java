@@ -2,24 +2,29 @@ import java.util.*;
 import java.io.*; 
 
 public class hw1{
-
-    public static void main(String[] args) throws Exception  {
+    
+    public static void write() throws Exception{
         FileWriter writer = new FileWriter("input.txt");  
         BufferedWriter buffer = new BufferedWriter(writer);  
         buffer.write("Welcome to javaTpoint.");  
         buffer.close();  
-        System.out.println("Success");  
+    }
 
-        FileReader fr=new FileReader("input.txt");    
-        BufferedReader br=new BufferedReader(fr);    
-
-        int i;    
-        while((i=br.read())!=-1){  
-        System.out.print((char)i);  
+    public static void read() throws Exception{
+        FileReader fr = new FileReader("input.txt");    
+        BufferedReader br = new BufferedReader(fr);   
+        String line = "";    
+        while((line=br.readLine())!= null){  
+            System.out.println("The printed line is: "+line);
         }  
-        System.out.println();
+
         br.close();    
-        fr.close();        
+        fr.close();      
+    }
+    public static void main(String[] args) throws Exception  {
+      write();
+      read();
+        
     }
 
 }
