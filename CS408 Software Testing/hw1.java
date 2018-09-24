@@ -104,6 +104,8 @@ public class hw1{
               midpoint = (value1 + value2) / 2;
               if(value2 - midpoint > midpoint - value1){
                   swordCount += Integer.parseInt(data[count][0]);
+              }else if(){
+                  
               }
             }else if(data[count][1].equals("NS") && data[count+1][1].equals("S")){
               midpoint = ()
